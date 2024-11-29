@@ -1,0 +1,269 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #EAC9F5 40%, #faf0ff 80%, white);
+    z-index: -1;
+    background-size: cover;
+  }
+  h1, h2, h3, h4, h5, h6{
+    font-family: 'Bricolage Grotesque';
+  }
+  p, button, ul{
+    font-family: 'Instrument Sans';
+  }
+  
+  @keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  
+  @keyframes header {
+    from {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+  
+  .introductionAbout{
+    display: grid;
+    column-gap: 10%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 50px auto;
+    
+    margin: 5% 10%;
+    h1{
+      margin: 0px;
+      opacity:0;
+      animation:  header 1.2s ease-out 1s forwards;
+      align-self: center;
+      grid-row: 1;
+      grid-column: 1;
+      padding-right: 0;
+      padding-left: 10%;
+    }
+
+    figure{
+      opacity:0;
+      animation:  fade-in 1.5s ease-out 1.8s forwards;
+      justify-self: center;
+      align-self: center;
+      width: 100%;
+      grid-row: span 3;
+      grid-column: 2;
+    }
+  }
+
+  .aboutNavigationBar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    p{
+      margin: 10% 0px;
+    }
+    button{
+      border: none;
+      border-radius: 30px;
+      padding: 0px 5%;
+      background-color: rgba(255, 255, 255, 0.491);
+      margin: 2%;
+      margin-bottom: 0px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover{
+      color: #BE2202;
+      box-shadow: 0 0 4px 4px #EAC9F5;
+    }
+    button.active{
+      color: #BE2202;
+      font-weight: bold;
+      box-shadow: 0 0 8px 8px white;
+    }
+  }
+
+  .abt{
+    display: none;
+  }
+  
+  .abt.active{
+    display: block;
+    opacity: 0;
+      animation: fade-in 1.3s ease-out forwards;
+      grid-row: 3;
+      grid-column: 1;
+  }
+
+  .highlight{
+    font-weight: bold;
+    color: #BE2202; 
+  }
+  
+  .mediaLinks{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    text-align: center;
+    margin: 5% 28%;
+  }
+  
+  .mediaLink1, .mediaLink2, .mediaLink3, .mediaLink4{
+    a{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+    }
+    button{
+      margin-top: 1%;
+      background-color: transparent;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    figure{
+      margin: 0;
+      img{
+        transition: transform 0.3s ease-in-out;
+        width: 50%;
+        height: auto;
+      }
+    }
+  }
+  .mediaLink1:hover, .mediaLink2:hover, .mediaLink3:hover, .mediaLink4:hover{
+    img{
+      transform: scale(1.1); 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mediaLinks {
+        flex-direction: column;
+    }
+  
+    .mediaLinks div {
+        margin-bottom: 20px;
+    }
+  }
+  
+  .skillNavigationBar{
+    display: flex;
+    margin: 5% 3%;
+    margin-bottom: 1px;
+    justify-content: center;
+    h5{
+      margin: 10% 0px;
+      font-size: large;
+    }
+    button{
+      border: none;
+      border-radius: 30px;
+      padding: 0px 5%;
+      background-color:#EAC9F5;
+      margin: 2%;
+      margin-bottom: 0px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover{
+      color: #BE2202;
+      box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.491);
+    }
+    button.active{
+      color: #BE2202;
+      font-weight: bold;
+      box-shadow: 0 0 8px 8px white;
+    }
+  }
+  
+
+  #languages, #digitalTools, #experience, #courses{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    visibility: hidden;
+    position: absolute;
+    top: 1px;
+  }
+  
+  .skills.active{
+    visibility: visible;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 5%;
+    border-radius: 30px;
+    margin-top: 0px;
+    justify-content: center;
+    ul{
+      display: flex;
+      flex-flow: wrap;
+      flex-direction: row;
+      list-style: none;
+      padding: 1%;
+      margin: 0;
+      li{
+        animation:  fade-in 0.8s ease-out;
+        text-align: center;
+        background-color: #EAC9F5;
+        border-radius: 15px;
+        margin: 1%;
+        margin-top: 0px;
+        line-height: 30px;
+        padding: 2% 8%;
+      }
+    }
+  }
+  
+  .skillSection{
+    position: relative;
+    height: 400px;
+  }
+
+  .skillSection .active{
+    visibility: visible !important;
+      display: block;
+      padding: 5%;
+      border-radius: 30px;
+      margin-top: 0px;
+      justify-content: center;
+      ul{
+        display: flex;
+        flex-flow: wrap;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+        padding: 1%;
+        margin: 0;
+        li{
+          animation:  fade-in 0.8s ease-out;
+          text-align: center;
+          background-color: #EAC9F5;
+          border-radius: 15px;
+          margin: 1%;
+          margin-top: 0px;
+          line-height: 30px;
+          padding: 5px 5%;
+        }
+      }
+  }
+  
+  .ftr .active{
+    height: 0px;
+  }
