@@ -4,13 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zainaks</title>
-    <link rel="stylesheet" href="css/accessibility.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="/css/accessibility.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/work.css">
     <!-- <link rel="stylesheet" href="/css/workMobile.css"> -->
-</head>
-    <body class="home-page">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+        h1 {
+         font-size: 2.488rem;
+        }
+        h2{
+         font-size: 2.074rem;
+        }
+        h3{
+         font-size: 1.728rem;
+        }
+        h4{
+         font-size: 1.44rem;
+        }
+        p{
+         font-size: 1rem;
+         line-height: 130%;
+        }
+        #mobileMessage {
+            display: none;
+            background-color: #EAC9F5;
+            color: black;
+            text-align: center;
+            padding: 60px;
+            font-size: 50px;
+            font-family: 'Instrument Sans';
+        }
+        .hidden-content .content {
+            display: none;
+        }
         </style>
+    </head>
+        <body class="home-page hidden-content">
+            <div id="mobileMessage">The mobile version of this site is currently in progress, but unusable at this time.</div>
+            <script>
+                function checkScreenWidth() {
+                    var mobileMessage = document.getElementById('mobileMessage');
+                    var bodyElement = document.body;
+
+                    if (window.innerWidth < 980) {
+                        mobileMessage.style.display = 'block';
+                        bodyElement.classList.add('hidden-content');
+                    } else {
+                        mobileMessage.style.display = 'none';
+                        bodyElement.classList.remove('hidden-content');
+                    }
+                }
+                checkScreenWidth();
+                window.addEventListener('resize', checkScreenWidth);
+            </script>
+        </body>
+    <body class="home-page">
         <div class="navigationTop">
             <a class="active" href="work.html">Work</a>
             <a id="aboutButn" href="about.html">About</a>
@@ -18,8 +68,8 @@
         <div class="introductionHome">
             <h2>Blending creativity, cognition, and tech.</h2>
             <div class="nameIntroduction">
-                <button class="abt-item" data-target="nameIntro" style="cursor: pointer;">
-                    <img src="images/iconMe.svg" alt="Simple icon of a woman meant to represent me, the designer.">
+                <button class="abtWork-item" data-target="nameIntro" style="cursor: pointer;">
+                    <img src="images/iconMe.svg">
                     <h1><span class="highlight">Zaina Saab</span></h1>
                 </button>
             </div>
@@ -30,7 +80,7 @@
                     <p>Majoring in Computation and Cognition</p>
                     <p>Minoring in UX Design, Writing</p>
                 </div>
-                    <p>I have a strong interest in human behaviors when faced with design and technology choices.</p>
+                    <p>I'm fascinated by how humans respond to design choices and strive to understand their needs, particularly in technology. I also enjoy dabbling in coding.</p>
                     <div class="mediaLinks">
                         <div class="mediaLink1">
                             <a href="https://linkedin.com/in/zaina-saab">
@@ -74,59 +124,40 @@
                 Your browser does not support the video tag.
             </video>
         </div>
-        <style>
-           @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
-           @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
-           h1 {
-            font-size: 2.488rem;
-           }
-           h2{
-            font-size: 2.074rem;
-           }
-           h3{
-            font-size: 1.728rem;
-           }
-           h4{
-            font-size: 1.44rem;
-           }
-           p{
-            font-size: 1rem;
-            line-height: 130%;
-           }
-        </style>
         <div class="workExperience">
             <div class="projects">
                 <div class="content2" onclick="location.href='parkSwift.html';" style="cursor: pointer;">
                     <div class = "contentStyling">
                     <h3>ParkSwift</h3>
-                    <p>Wireframe / Design</p>
-                    <p id="projOteam">Team Project</p>
+                    <p>Faceted Search Design</p>
+                    <p id="projOteam">0-to-1 Project</p>
                     <figure>
-                        <img src="images/free-instagram-iphone-15-mockup_www.sachanati.com.jpg" alt="Phone displaying interface of ParkSwift mobile app" style="width:100%">
+                        <img src="images/parkSwiftFront.jpg" alt="Phone displaying interface of ParkSwift mobile app" style="width:100%">
                     </figure>
                 </div>
             </div>
-                <div class="content3">
+                <div class="content3" onclick="location.href='ndCampus.html';" style="cursor: pointer;">
                     <div class = "contentStyling">
                     <h3>Neurodivergency on Campus</h3>
-                    <p>UX Research</p>
-                    <p id="projOteam">Sole Project</p>
+                    <p>Photo-Elicitation Interviews</p>
+                    <p id="projOteam">Exploratory Research</p>
                     <figure>
                         <img src="images/neurodiversity.jpg" alt="Minimalist illustration of a crowd of people" style="width:100%">
                     </figure>
                 </div>
             </div>
-                <div class="content4">
+                <div class="content4"  onclick="location.href='mastodon.html';" style="cursor: pointer;">
                     <div class = "contentStyling">
                     <h3>Exploring Mastodon</h3>
                     <p>Social Media Analysis</p>
-                    <p id="projOteam">Sole Project</p>
+                    <p id="projOteam">Usability Study</p>
                     <figure>
                         <img src="images/exploringM.jpg" alt="Mastodon social media icon" style="width:100%">
                     </figure>
                 </div>
             </div>
         </div>
+        <p id="note">This portfolio is a work in progress. Accessibility improvements, such as better keyboard navigation, are underway.</p>
     </div>
     <script type="module" src="js/work.js"></script>
 </div>
