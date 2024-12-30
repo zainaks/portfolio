@@ -83,17 +83,20 @@ html, body {
     display: grid;
     gap: 5%;
     align-content: space-evenly;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     .sum1, .sum2, .sum3, .sum4, .sum5{
       align-items: center;
       text-align: center;
       background-color: rgba(255, 255, 255, 0.491);
       border-radius: 30px;
-      padding: 10% 5%;
       h5{
+        padding: 10%;
+        padding-bottom: 0;
         margin: 0;
       }
       p{
+        padding: 10%;
+        padding-top: 0;
         margin-top: 0px;
         margin-bottom: 30px;
       }
@@ -108,25 +111,24 @@ html, body {
     }
     .sum3{
       grid-column: 2;
-      grid-row: 1;
-    }
-    .sum4{
-      grid-column: 2;
       grid-row: 2;
     }
     .sum5{
+      background-color: transparent;
       grid-column: 3;
       grid-row: span 2;
     }
   }
 
   .description{
-    .opportunity{
-        margin-top: 10%;
-        margin: 5% 15%;
+    margin: 5% 15%;
+    ul li{
+      list-style: none;
     }
-    .team{
-        margin: 5% 15%;
+    .problemStatement{
+        margin-top: 10%;
+    }
+    .beginProto{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -134,96 +136,88 @@ html, body {
           width: 350px;
         }
     }
-    .contribution{
-        margin: 5% 15%; 
-        img{
-          width: 300px;
+    .designProcess{
+      ul li{
+        p{
+          margin: 0px -10%;
         }
+      }
+      figure{
+        justify-self: center;
+        margin: 0px;
+        img{
+          margin: 0px -15%;
+          width: 120%;
+          border-radius: 30px;
+        }
+      }
+      #IAimage{
+        width: 75%;
+      }
     }
   }
 
-  .visuals{
-    figure{
-      img{
-        width: 30%;
-      }
-    }
-  }
-  
-  .workExperience{
-    margin-top: 10%;
-    margin-bottom: 10%;
-  }
-  
-  .projects {
-    animation: fade-in 1.5s ease-in both;
+  .projectNavigation {
     display: grid;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    margin: 10% 15%;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10%;
+    margin: 0px 15%;
+    justify-content: space-between;
   }
   
-  .content1, .content2, .content3, .content4{
-    background-color: none;
-    border-radius: 30px;
-  }
-  
-  .content1 :hover,
-  .content2 :hover,
-  .content3 :hover,
-  .content4 :hover{
-    background-color: rgba(255, 255, 255, 0.491);
-    border-radius: 30px;
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.491);
-  }
-  
-  .contentStyling :hover{
-    box-shadow: none;
-    background: none;
-    transition: none;
-    transform: none;
-    border: none;
-  }
-  
-  .contentStyling{
-    filter: none;
-    border-radius: 60px;
-    justify-items: center;
-    display: grid;
-    row-gap: 1%;
-    h4, h6, p{
-        text-align: center;
-      justify-self: center;
-      margin: 1% 5%;
+  .seeNextProject{
+    grid-column: 2;
+    justify-content: right;
+    align-items: baseline;
+    h5{
+      margin-bottom: 5px;
+      font-weight: bold;
+      text-align: right;
+      padding-left: 50px;
+      padding-right: 50px;
     }
-    p::before{
-      content: '\25C9';
-      padding-right: 10px;
+    p{
+      text-align: left;
+      justify-self: right;
+      margin-bottom: 20px;
+      color: #BE2202;
+      padding-left: 50px;
+      padding-right: 50px;
     }
-    figure{
-      img{
-        border-radius: 30px;
-      }
-      margin: 0;
+    .button{
+      background-color: rgba(255, 255, 255, 0.582);
+      border-radius: 30px;
+      padding: 5px;
+      width: 400px;
+  }
+  margin-bottom: 150px;
+}
+
+    .seePrevProject{
+      display: none;
+      grid-column: 1;
       grid-row: 1;
-      width: 200px;
-    }
-  }
-  
-  .seeOtherProjects{
-    margin: 10% 20%;
-    .otherContent{
-        gap: 10%;
-        display: grid;
-        align-content: space-evenly;
-        .content4{
-            grid-column: 3;
-            grid-row: 1;
-        }
-    }
+      justify-content: left;
+      align-items: baseline;
+      
+      h5{
+        margin-bottom: 5px;
+        font-weight: bold;
+        text-align: left;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      p{
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: right;
+        justify-self: left;
+        margin-bottom: 20px;
+        color: #BE2202;
+      }
+      .button2{
+        background-color: rgba(255, 255, 255, 0.582);
+        border-radius: 30px;
+        padding: 5px;
+        width: 400px;
+      }
+      margin-bottom: 150px;
   }
