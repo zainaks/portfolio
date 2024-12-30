@@ -88,19 +88,20 @@ html, body {
       transition: background-color 0.3s ease;
     }
     button:hover{
-      color: #BE2202;
+      font-weight: 600;
       box-shadow: 0 0 4px 4px #EAC9F5;
     }
     button.active{
-      color: #BE2202;
       font-weight: bold;
-      box-shadow: 0 0 8px 8px white;
+      color: #BE2202;
+      background-color: white;
+      box-shadow: 0 0 4px 4px #EAC9F5;
     }
   }
 
   .abt{
     display: none;
-  }
+    }
   
   .abt.active{
     display: block;
@@ -120,7 +121,7 @@ html, body {
     justify-content: space-evenly;
     flex-wrap: nowrap;
     text-align: center;
-    margin: 5% 28%;
+    margin: 10% 28%;
   }
   
   .mediaLink1, .mediaLink2, .mediaLink3, .mediaLink4{
@@ -176,19 +177,19 @@ html, body {
       border: none;
       border-radius: 30px;
       padding: 0px 5%;
-      background-color:#EAC9F5;
+      background-color: rgba(255, 255, 255, 0.491);
       margin: 2%;
       margin-bottom: 0px;
       transition: background-color 0.3s ease;
     }
     button:hover{
       color: #BE2202;
-      box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.491);
+      box-shadow: 0 0 4px 4px #EAC9F5;
     }
     button.active{
       color: #BE2202;
-      font-weight: bold;
-      box-shadow: 0 0 8px 8px white;
+      background-color: white;
+      box-shadow: 0 0 4px 4px #EAC9F5;
     }
   }
   
