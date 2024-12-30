@@ -3,7 +3,7 @@
     display: flex;
     justify-content: right;
     align-items: center;
-    background-image: url('/portfolio/images/header.svg');
+    background-image: url('/images/header.svg');
     background-size: contain;
     background-position: top right; 
     background-repeat: no-repeat; 

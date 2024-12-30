@@ -1,0 +1,244 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #EAC9F5;
+  }
+  
+
+  h1, h2, h3, h4, h5, h6{
+    font-family: 'Bricolage Grotesque';
+  }
+  p, button, ul{
+    font-family: 'Instrument Sans';
+  }
+  
+  @keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  
+  @keyframes header {
+    from {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+
+  .highlight{
+    font-weight: bold;
+    color: #BE2202; 
+  }
+  
+  /* see um gpt results to edit*/
+  .arrow {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    button{
+      border: none;
+      background: transparent;
+    }
+    img{
+      padding: 20px;
+    }
+  }
+
+  .arrow:hover{
+    transform: scale(1.1);
+  }
+  
+  .topContentNav{
+    margin-top: 5%;
+    h2, h5, p{
+      opacity: 0;
+      animation:  fade-in 1.3s ease-out 1s forwards;
+      text-align: center;
+    }
+    h2, h5{
+      margin: 1% 30%;
+    }
+    h5::before{
+      content: '\25C9';
+      padding-right: 10px;
+      color:#BE2202
+    }
+    p{
+      margin: 1% 35%;
+    }
+  }
+  
+  
+  .contentOverview{
+    opacity: 0;
+    animation:  header 1.3s ease-out 1.5s forwards;
+    margin: 2% 15%;
+    display: grid;
+    gap: 5%;
+    align-content: space-evenly;
+    grid-template-columns: repeat(3, 1fr);
+    .sum1, .sum2, .sum3, .sum4, .sum5{
+      align-items: center;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.491);
+      border-radius: 30px;
+      padding: 10% 5%;
+      h5{
+        margin: 0;
+      }
+      p{
+        margin-top: 0px;
+        margin-bottom: 30px;
+      }
+    }
+    .sum1{
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .sum2{
+      grid-column: 1;
+      grid-row: 2;
+    }
+    .sum3{
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .sum4{
+      grid-column: 2;
+      grid-row: 2;
+    }
+    .sum5{
+      grid-column: 3;
+      grid-row: span 2;
+    }
+  }
+
+  .descriptionC2N{
+  margin: 10% 20%;
+    .process{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img{
+        width: 350px;
+      }
+    }
+    .opportunity, .process, .conclusion{
+      padding-bottom: 5%;
+    }
+    .conclusion{
+      h5{
+        margin: 5% 0px 0px 0px;
+      }
+      ul{
+        margin: 0px;
+      }
+      ul li{
+        list-style-position: inside;
+        padding: 3%;
+        padding-left: 0px;
+      }
+      ul li::marker{
+        color: #BE2202;
+      }
+      .conclusionList{
+        background-color: rgba(255, 255, 255, 0.491);
+        padding: 1% 3% 3% 3%;
+        border-radius: 30px;
+      }
+    }
+  }
+
+  .visuals{
+    figure{
+      img{
+        width: 30%;
+      }
+    }
+  }
+  
+  .workExperience{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  
+  .projects {
+    animation: fade-in 1.5s ease-in both;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 10% 15%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%;
+  }
+  
+  .content1, .content2, .content3, .content4{
+    background-color: none;
+    border-radius: 30px;
+  }
+  
+  .content1 :hover,
+  .content2 :hover,
+  .content3 :hover,
+  .content4 :hover{
+    background-color: rgba(255, 255, 255, 0.491);
+    border-radius: 30px;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.491);
+  }
+  
+  .contentStyling :hover{
+    box-shadow: none;
+    background: none;
+    transition: none;
+    transform: none;
+    border: none;
+  }
+  
+  .contentStyling{
+    filter: none;
+    border-radius: 60px;
+    justify-items: center;
+    display: grid;
+    row-gap: 1%;
+    h4, h6, p{
+        text-align: center;
+      justify-self: center;
+      margin: 1% 5%;
+    }
+    p::before{
+      content: '\25C9';
+      padding-right: 10px;
+    }
+    figure{
+      img{
+        border-radius: 30px;
+      }
+      margin: 0;
+      grid-row: 1;
+      width: 200px;
+    }
+  }
+  
+  .seeOtherProjects{
+    margin: 10% 20%;
+    .otherContent{
+        gap: 10%;
+        display: grid;
+        align-content: space-evenly;
+        .content4{
+            grid-column: 3;
+            grid-row: 1;
+        }
+    }
+  }

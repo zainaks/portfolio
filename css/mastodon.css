@@ -102,7 +102,7 @@ html, body {
       }
     }
     .sum1{
-      grid-column: 1;
+      grid-column: span 2;
       grid-row: 1;
     }
     .sum2{
@@ -117,43 +117,30 @@ html, body {
       background-color: transparent;
       grid-column: 3;
       grid-row: span 2;
+      align-self: center;
+        img{
+            width: 300px;
+        }
     }
   }
 
   .description{
     margin: 5% 15%;
-    ul li{
-      list-style: none;
+    margin-top: 10%;
+  }
+
+  .problemStatement{
+    margin-top: 10%;
+  }
+
+  .fullArticle{
+    h3{
+      justify-self: left;
     }
-    .problemStatement{
-        margin-top: 10%;
-    }
-    .beginProto{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        img{
-          width: 350px;
-        }
-    }
-    .designProcess{
-      ul li{
-        p{
-          margin: 0px -10%;
-        }
-      }
-      figure{
-        justify-self: center;
-        margin: 0px;
-        img{
-          margin: 0px -15%;
-          width: 120%;
-          border-radius: 30px;
-        }
-      }
-      #IAimage{
-        width: 75%;
-      }
+    a{
+      text-align: left;
+      text-decoration: none;
+      color: #BE2202;
     }
   }
 
@@ -164,6 +151,7 @@ html, body {
   }
   
   .seeNextProject{
+    display: none;
     grid-column: 2;
     justify-content: right;
     align-items: baseline;
@@ -188,11 +176,9 @@ html, body {
       padding: 5px;
       width: 400px;
   }
-  margin-bottom: 150px;
 }
 
     .seePrevProject{
-      display: none;
       grid-column: 1;
       grid-row: 1;
       justify-content: left;
