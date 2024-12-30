@@ -74,13 +74,6 @@ p, button, ul{
   }
 }
 
-.sparkleIcon img {
-  width: 10%;
-  z-index: -1;
-  top: 30%;
-  left: 30%;
-}
-
 .video-background {
   background-repeat: repeat;
   position: 0 0;
@@ -90,7 +83,7 @@ p, button, ul{
 
 .video-background video {
   animation:  fade-in 1.5s ease-in;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   min-width: 150vh;
@@ -294,10 +287,9 @@ p, button, ul{
 .content4 :hover{
   background-color: white;
   border-radius: 30px;
-  transform: scale(1.05);
+  transform: scale(1.01);
   transition: all 0.4s ease-in-out;
-  box-shadow: 0px 0px 10px 10px white;
-  padding: 10px;
+  box-shadow: 0px 0px 30px 30px white;
 }
 
 .contentStyling :hover{
@@ -380,4 +372,9 @@ p, button, ul{
   .mediaLinks div {
       margin-bottom: 20px;
   }
+}
+
+#note{
+  margin: 0px 10%;
+  text-align: center;
 }
