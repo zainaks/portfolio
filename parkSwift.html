@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zainaks</title>
-    <link rel="stylesheet" href="css/accessibility.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/parkSwift.css">
+    <link rel="stylesheet" href="/css/accessibility.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/parkSwift.css">
 </head>
 <body>
     <style>
@@ -42,102 +42,96 @@
         </button>
     </div>
     <div class="topContentNav">
-        <h5><span class="highlight">Team Project</span></h5>
+        <h5><span class="highlight">0-to-1 Project</span></h5>
         <h2>ParkSwift</span></h2>
         <p>A team project to build an app for renting and selling parking spaces in the city Ann Arbor, Michigan.</p>
     </div>
     <div class="contentOverview">
             <div class = "sum1">
-                <h5>Role</h5>
-                <p>UX/UI Design Member</p>
+                <h5>Team</h5>
+                <p>VOID Tech organization at the University of Michigan</p>
             </div>
             <div class = "sum2">
-                <h5>Tools</h5>
-                <p>Figma</p>
+                <h5>Status</h5>
+                <p>In Development</p>
             </div>
             <div class = "sum3">
-                <h5>Process</h5>
-                <p>High Fidelity and Low Fidelity Prototyping</p>
-            </div>
-            <div class = "sum4">
                 <h5>Timeline</h5>
                 <p>October 2023 - Current (1 Year)</p>
             </div>
-            <div class = "sum5">
-                <h5>Team</h5>
-                <p>VOID Tech organization at the University of Michigan, in collaboration with 8 other design members.</p>
+            <div class = "sum4">
+                <h5>Role</h5>
+                <p>Independently responsible for the construction and design of facets and filtration system.</p>
             </div>
-    </div>
-    <div class="visuals">
-        <h3>Full Prototype on Figma</h3>
-        <figure>
-        </figure>
+            <div class = "sum5" style="max-width: 100%; overflow: hidden;">
+                <iframe 
+                  style="border: 1px solid rgba(0, 0, 0, 0.1); width: 100%; height: auto; aspect-ratio: 3 / 4;" 
+                  src="https://embed.figma.com/proto/xuFJrIEGG7I71kikv8TsFA/portofolio-%5Bux-and-coding%5D?node-id=480-5147&scaling=fit-width&content-scaling=fixed&page-id=280%3A93&embed-host=share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
     </div>
     <div class="description">
-        <div class="opportunity">
-            <h3>Opportunity</h3>
-            <p>In my sophomore year of college, I was accepted into <a href="https://void-tech-um.github.io/">VOID Technology</a>, an organization at my university that brings together student designers, developers, and product managers to produce one to two annual online products. After all of our collective ideas for the year were taken into consideration, one of the products chosen was ParkSwift, a mobile app which would focus on buying and renting parking spaces in Ann Arbor, Michigan.</p>
+        <div class="problemStatement">
+            <h3>Problem Statement</h3>
+            <p>Users had to brute search through postings to find the offers they desire.</p>
         </div>
-        <div class="team">
-            <div class="textBoxTeam">
-                <h3>Starting Off As a Team</h3>
-                <ul>
-                    <li><h4>Crazy 8s Design Sprint</h4>
-                        <p>This was a sprint activity done together as a team, meant to garner more ideas for the initial low fidelity prototype.</p>
-                    </li>
-                    <li><h4>Referencing, Finding Needs</h4>
-                        <p>We searched for different mobile sites with features that we felt were proper for the app’s purpose.</p>
-                    </li>
-                    <li><h4>Building The Design System</h4>
-                        <p>After the low fidelity prototype was completed, a simple design system, including the typography and color scheme, was implemented onto the prototype.</p>
-                    </li>
-                </ul>
+        <div class="beginProto">
+            <div>
+                <h3>Before the Prototypes</h3>
+                <p>The design process began with initial conceptualization, focusing on how filtering functionality could be integrated. Initially envisioned as a supplementary add-on feature, rather than a standalone page, it quickly became evident through a brief assessment of possible user needs that a dedicated filtering page was necessary.
+                </p>
             </div>
-            <figure>
-                <img src="/images/psDesignSystem.png" alt="The design system of the park swift mobile app, including typography and color scheme.">
-            </figure>
         </div>
-        <div class="contribution">
-            <h3>My Main Contribution</h3>
+        <div class="designProcess">
+            <h3>Design Process</h3>
             <ul>
-                <li><h4>Front Page Navigation</h4>
-                    <p>The low fidelity prototype began with the front page, which called for a scrolling system wherein users could quickly understand what is being rented on this app, and the features these rentals provide to them.
-                    </br>
-                    I created the initial design for the renting boxes, and collaborated with other designers afterwards to improve structure and symmetry. There were several different possible designs I could implement, however I chose the one that would be best eligible for all users.
-                    </p>
-                    <img src="/images/psFrontBars.png" alt="Front page for Park Swift.">
+                <li>
+                    <h4>Information Architecture</h4>
+                    <figure id="IAimage">
+                        <img src="/images/psIA.png" alt="Information architecture diagram used for prototyping, which displays the full hierarchal structure of the filtering page, starting from the homepage.">
+                    </figure>
                 </li>
-                <li><h4>Filtering System</h4>
-                    <p>I assigned myself to focus on the filtering pages while the rest of the team chose their own roles. The filtering system was an unexpected learning curve for me to implement—It was my first time designing a mobile app, and I was not well situated with their filtering structures. After referencing multiple different apps, I was able to create a page that could cover all the needed filtering options, while also reducing the amount of cluster and overwhelmness for users.</p>
-                <img src="/images/psFinalFilters.png" alt="Final filtering prototype for Park Swift.">
+                <li>
+                    <h4>Iteration #1</h4>
+                    <p>After identifying user requirements, the focus shifted to balancing comprehensive functionality with a clean, concise layout. The goal was to ensure all filter options were visible and accessible to users, without overwhelming them with visual clutter or excessive interactions.
+                    </br></br> A significant portion of this iteration involved determining the optimal input methods for users to specify preferences, such as selecting "Up to $10 per hour" versus "Less than $300 per month." This process required careful consideration of usability principles and the design of input systems that were both flexible and user-friendly.
+                    </p>
+                    <figure>
+                        <img src="/images/psIterationOne.svg" alt="The first few frames of the initial low-fi prototype, which has three options, and different drafted features shown outside of the frames.">
+                    </figure>
+                </li>
+                <li>
+                    <h4>Iteration #2</h4>
+                    <p>The first iteration revealed several usability challenges, prompting significant refinements. Mobile apps like Uber were referenced to evaluate effective interaction patterns and structural layouts that align with user expectations.
+                    </br></br> In this iteration, special attention was given to ergonomic design principles, particularly the "Thumb Zone Rule," to enhance comfort and accessibility for mobile users. A key improvement involved replacing the overly small navigation bar with dropdown menus, which provided a more practical and user-friendly solution for accessing filter options.
+                    </br></br> Additionally, collaboration with team members facilitated the integration of filtering features, such as parking-related tags, directly onto posts. This enhancement improved the overall user experience by streamlining navigation and enabling more intuitive filtering functionality.
+                    </p>
+                    <figure>
+                        <img src="/images/psIterationTwo.svg" alt="The final high-fi frames of the prototype, which display all available options and a new tag feature.">
+                    </figure>
                 </li>
             </ul>
         </div>
+        <div class="results">
+            <h3>Results</h3>
+                <p>The initial challenge stemmed from the app's lack of a proper faceted search system, which significantly hindered usability and user satisfaction. By identifying key facets, designing an intuitive structure to support them, and creating a user-friendly navigation system, I developed a well-organized and effective faceted search system prototype.
+                </br></br> The newly designed filtering system, combined with the implementation of parking-related tags, substantially enhanced the app’s functionality and usability. These improvements are expected to result in significantly reduced user task completion times and increased flexibility in meeting user needs. With these refinements, the app is now better positioned to receive positive feedback in a System Usability Scale (SUS) assessment.</p>
+        </div>
     </div>
-    <div class="seeOtherProjects">
-        <h5>More Projects to View:</h5>
-        <div class="otherContent">
-            <div class="content3">
-                <div class = "contentStyling">
-                <h4>Neurodivergency on Campus</h4>
-                <h6>UX Research</h6>
-                <p>Sole Project</p>
-                <figure>
-                    <img src="images/neurodiversity.jpg" alt="Minimalist illustration of a crowd of people" style="width:100%">
-                </figure>
+    <div class="projectNavigation">
+        <div class="seeNextProject">
+            <div class="button" onclick="location.href='ndCampus.html';" style="cursor: pointer;">
+                <h5>View Next Case Study:</h5>
+                <p>Neurodivergency on Campus</p>
             </div>
         </div>
-            <div class="content4">
-                <div class = "contentStyling">
-                <h4>Exploring Mastodon</h4>
-                <h6>Social Media Analysis</h6>
-                <p>Sole Project</p>
-                <figure>
-                    <img src="images/exploringM.jpg" alt="Mastodon social media icon" style="width:100%">
-                </figure>
+        <div class="seePrevProject">
+            <div class="button2" onclick="location.href='parkSwift.html';" style="cursor: pointer;">
+                <h5>View Previous Case Study:</h5>
+                <p>ParkSwift</p>
             </div>
-    </div>
-    </div>
+        </div>
     </div>
 </body>
 </html>
