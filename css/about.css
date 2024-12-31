@@ -263,6 +263,10 @@ html, body {
           padding: 5px 5%;
         }
       }
+      p{
+        margin: 0px 15%;
+        text-align: center;
+      }
   }
   
   .ftr .active{
