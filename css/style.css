@@ -125,6 +125,7 @@ body{
     background-color: white;
     font-weight: bold;
     border: 1px solid black;
+    width: 200px;
 }
 
 .cases button:hover{
@@ -153,7 +154,7 @@ body{
     box-shadow: none;
     background-color:white;
     color: white;
-    border: none;
+    border: white;
 }
 
 .intro{
