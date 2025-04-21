@@ -132,9 +132,28 @@ body{
     background-color: #F9F0F9;
 }
 
+#backHome{
+    border: none;
+    text-decoration: underline;
+    text-align: left;
+}
+
+#backHome:hover{
+    box-shadow: none;
+    background-color:white;
+    color: #695478;
+}
+
 #rightButton{
     justify-self: right;
-    margin-left: 70%;
+    margin-left: 50%;
+}
+
+#ignoreThisButton{
+    box-shadow: none;
+    background-color:white;
+    color: white;
+    border: none;
 }
 
 .intro{
