@@ -111,7 +111,7 @@ body{
 
 
 .cases{
-    animation: fade-in 0.3s ease-out;
+    /* animation: fade-in 0.3s ease-out; */
     border: 1px solid black;
     padding: 40px 60px 40px 60px;
     width: 1000px;
