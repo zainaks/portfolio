@@ -98,19 +98,17 @@ body{
   }
 
 .boxContainer {
-    display: grid;
-    gap: 40px;
-    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); 
-    width: 1200px;
-    margin: 10% auto;
+    width: 1000px;
+    margin: 150px;
     align-items: stretch; /* Ensures all childresn stretch */
-    height: 450px;
+    justify-self: center;
     background-color: white;
     box-shadow: 0 0 0px 60px white;
 }
 
 
 .cases{
+    animation: fade-in 0.3s ease-out;
     border: 1px solid black;
     padding: 40px 60px 40px 60px;
     width: 1000px;
@@ -153,7 +151,7 @@ body{
     box-shadow: none;
     background-color:white;
     color: white;
-    border: white;
+    border: none;
 }
 
 .intro{
@@ -205,12 +203,10 @@ body{
 .leftBox {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 10px;
     align-self: center;
-    height: 100%; /* Ensures it takes up full height of parent */
-    overflow: auto; /* Ensures inner content doesn't overflow */
-    padding: 10px; /* Add padding to create space for shadows */
-    margin: -10px; 
+    justify-self: center;
+    width: 950px;
 }
 
 .leftBox h3{
@@ -226,29 +222,24 @@ body{
 }
 
 .caseOne, .caseTwo, .caseThree {
+    margin-bottom: 20px;
     padding-left: 15px;
     display: flex;
     align-items: center;
-    border: solid black 1px;
     background-color: white;
     box-sizing: border-box; /* Ensures padding doesn't increase size */
     flex-grow: 1;
     min-height: 30%;
-    box-shadow: 6px 6px 0px 0px #C4B2CF;
-}
-
-.caseOne, .caseTwo{
-    margin-bottom: 10px;
+    height: 300px;
 }
 
 .caseOne img, .caseTwo img, .caseThree img {
-    max-width: 100px;
+    max-width: 350px;
     height: auto; /* Keeps aspect ratio */
-    border-radius: 300px;
 }
 
 .caseOne:hover, .caseTwo:hover, .caseThree:hover {
-    box-shadow: 0 0 0 0.5px black;
+    box-shadow: 0 0 0 1px black;
     background-color: #F9F0F9;
     transition: 0.3s;
 }
@@ -257,12 +248,13 @@ body{
     grid-row: 1;
     flex-shrink: 1;
     grid-column: 1;
-    padding: 2px 80px 40px 40px; 
+    padding: 2px 200px 40px 80px; 
+    justify-content: center;
     width: auto;
     overflow: auto;
 }
 
-.welcomeBox h1{
+.welcomeBox h1, .passionBox h3, .educationBox h3, .experienceBox h3, .toolsBox h3{
     padding-top: 40px;
 }
 
