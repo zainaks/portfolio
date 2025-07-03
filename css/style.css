@@ -103,7 +103,7 @@ body{
     align-items: stretch; /* Ensures all childresn stretch */
     justify-self: center;
     background-color: white;
-    box-shadow: 0 0 0px 60px white;
+    box-shadow: 0 0 200px 150px white;
 }
 
 
@@ -231,6 +231,7 @@ body{
     flex-grow: 1;
     min-height: 30%;
     height: 300px;
+    box-shadow: 0 0 0px 1px black;
 }
 
 .caseOne img, .caseTwo img, .caseThree img {
@@ -248,7 +249,7 @@ body{
     grid-row: 1;
     flex-shrink: 1;
     grid-column: 1;
-    padding: 2px 200px 40px 80px; 
+    padding: 2px 80px 40px 80px; 
     justify-content: center;
     width: auto;
     overflow: auto;
@@ -258,6 +259,15 @@ body{
     padding-top: 40px;
 }
 
+.welcomeBox h1, .welcomeBox p{
+    display: flex;
+    justify-self: center;
+}
+
+.welcomeBox h1{
+    font-size: 4rem;
+}
+
 .welcomeBox img{
     width: 150px;
 }
@@ -265,7 +275,8 @@ body{
 .mediaLinks {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
+    justify-self: center;
     align-items: center;
     gap: 30px;
     background: none;
